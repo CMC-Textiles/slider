@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,47 +10,54 @@
 </head>
 
 <body>
-    <!--======Loder=====-->
-<!--     <div id="preloader">
-        <div class="loader"></div>
-    </div> -->
-    <!-- Logo -->
-    <div> <img src="logo.png" class="logo"> </div>
-    <!--=========SLIDER==========-->
-    <div class="slider">
-        <div class="slides">
-            <img src="img (1).png" alt="Slide 1">
-            <img src="img (7).png" alt="Slide 2">
-            <img src="img (6).png" alt="Slide 3">
-            <img src="img (4).png" alt="Slide 4">
-            <img src="img (5).png" alt="Slide 5">
-            
-        </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-       
+    <!-- ================================================================================================================ -->
+    <div class="container">
+        <header>
+            <!--======Loder=====-->
+            <div id="preloader">
+                <div class="loader"></div>
+            </div>
+            <!-- Logo -->
+            <div> <img src="logo.png" class="logo"> </div>
+        </header>
+        <main>
+            <!--=========SLIDER==========-->
+            <div class="slider">
+                <div class="slides">
+                    <img src="img (1).png" alt="Slide 1">
+                    <img src="img (7).png" alt="Slide 2">
+                    <img src="img (6).png" alt="Slide 3">
+                    <img src="img (4).png" alt="Slide 4">
+                    <img src="img (5).png" alt="Slide 5">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <!--===========Popup===========-->
+            <div class="popup-overlay" id="popupOverlay">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closeGallery()">&times;</span>
+                    <div class="popup-images">
+                        <img src="img (1).png" alt="Slide 1" onclick="selectImage(0)">
+                        <img src="img (7).png" alt="Slide 2" onclick="selectImage(1)">
+                        <img src="img (6).png" alt="Slide 3" onclick="selectImage(2)">
+                        <img src="img (4).png" alt="Slide 4" onclick="selectImage(3)">
+                        <img src="img (5).png" alt="Slide 5" onclick="selectImage(4)">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--===========================Footer==============================-->
+        <footer>
+            <!--==Icon==-->
+            <img src="icon (2).png" class="footer-icon" onclick="openGallery()">
+            <img src="icon4.png" class="footer-icon" onclick="downloadPDF()">
+            <a href="https://www.cmctextiles.com/" target="_blank"><img src="web.png" class="footer-icon"></a>
+        </footer>
     </div>
 
-    <!--===================Popup overlay for gallery view================-->
-    <div class="popup-overlay" id="popupOverlay">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closeGallery()">&times;</span>
-            <div class="popup-images">
-                <img src="img (1).png" alt="Slide 1" onclick="selectImage(0)">
-                <img src="img (7).png" alt="Slide 2" onclick="selectImage(1)">
-                <img src="img (6).png" alt="Slide 3" onclick="selectImage(2)">
-                <img src="img (4).png" alt="Slide 4" onclick="selectImage(3)">
-                <img src="img (5).png" alt="Slide 5" onclick="selectImage(4)">
-            </div>
-        </div>
-    </div>
-<!--===========================Footer==============================-->
-<footer>
-     <!--==Icon==-->
-     <img src="icon (2).png" class="footer-icon" onclick="openGallery()">
-     <img src="icon4.png" class="footer-icon" onclick="downloadPDF()">
-     <a href="https://www.cmctextiles.com/" target="_blank"><img src="web.png" class="footer-icon"></a>
-</footer>
+
+    <!--==============================================================================================================-->
     <script src="script.js"></script>
 </body>
 
