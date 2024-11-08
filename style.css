@@ -16,7 +16,9 @@ body {
     overflow: hidden;
 }
 @media (min-width: 700px) {
-     overflow: auto;
+     body{
+      overflow: auto;
+     }
 }
 .slider {
     position: relative;
