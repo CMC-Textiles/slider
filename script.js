@@ -41,3 +41,17 @@ function downloadPDF() {
     link.download = "YourFileName.pdf"; // Filename for the downloaded file
     link.click(); // Trigger the download
 }
+
+
+// ======================= loder
+// script.js
+
+window.addEventListener('load', () => {
+    // Hide the preloader
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+
+    // Show the main content
+    const content = document.getElementById('content');
+    content.style.display = 'block';
+});
