@@ -13,12 +13,12 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 /*     background-color: #E2F1E7; */
- 
     overflow: hidden;
 }
 @media (min-width: 700px) {
      body{
       overflow: auto;
+      justify-content: center;
      }
 }
 .slider {
