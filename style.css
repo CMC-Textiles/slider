@@ -141,13 +141,6 @@ button.prev:hover, button.next:hover {
 
 
 /* ======================Loder======== */
-/* style.css */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevent scrolling while preloader is visible */
-}
 
 #preloader {
     position: fixed;
