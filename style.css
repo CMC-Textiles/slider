@@ -4,22 +4,40 @@
     margin: 0;
     padding: 0;
  }
-body {
-    display: flex;
+html,body {
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-/*     background-color: #E2F1E7; */
-    overflow: hidden;
+    background-color: #E2F1E7;
+    overflow: hidden; */
+    height: 100%;
 }
-@media (min-width: 700px) {
-     body{
-      overflow: auto;
-      justify-content: center;
-     }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure container takes up full viewport height */
+}
+
+header, main {
+    padding: 20px;
+    flex-grow: 1; /* Main content area grows to fill available space */
+}
+
+footer {
+    background-color: red;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .slider {
     position: relative;
@@ -119,15 +137,14 @@ button.prev:hover, button.next:hover {
 
 /* ==================Footer=================== */
 
- footer{
-    /* background-color: #D6C0B3; */
+ /* footer{
     background-color: #243642;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
- }
+ } */
 .footer-icon{
     width: 40px;
     transition: transform 0.3s ease; 
@@ -142,6 +159,8 @@ button.prev:hover, button.next:hover {
 
 
 /* ======================Loder======== */
+/* style.css */
+
 
 #preloader {
     position: fixed;
