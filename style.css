@@ -12,7 +12,8 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #E2F1E7;
+/*     background-color: #E2F1E7; */
+ 
     overflow: hidden;
 }
 @media (min-width: 700px) {
