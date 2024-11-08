@@ -15,7 +15,9 @@ body {
     background-color: #E2F1E7;
     overflow: hidden;
 }
-
+@media (min-width: 700px) {
+     overflow: auto;
+}
 .slider {
     position: relative;
     width: 100%;
